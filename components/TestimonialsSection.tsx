@@ -16,6 +16,7 @@ const TestimonialsSection = () => {
           <SectionEyebrow label="Testimonials" accent="#8B5CF6" dark={true} />
           <HeadingComponent
             heading="Don't just take our word for it"
+            italicWord="word"
             description="A few words from the people we've shipped products with."
             variant="secondary"
             textCentered={true}

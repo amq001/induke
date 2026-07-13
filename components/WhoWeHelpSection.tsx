@@ -11,6 +11,7 @@ const WhoWeHelpSection = () => {
           <SectionEyebrow label="Who We Help" accent="#F37036" dark={false} />
           <HeadingComponent
             heading="Built for teams at every stage"
+            italicWord="stage"
             description="From first-time founders to enterprise teams, we tailor how we work to fit where you are."
             variant="primary"
             textCentered={true}

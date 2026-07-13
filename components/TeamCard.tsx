@@ -80,7 +80,7 @@ const TeamCard = ({ name, role, bio, photo, accent, social, index = 0 }: Props) 
                 alt={name}
                 fill
                 sizes="112px"
-                className="object-cover"
+                className="object-cover rounded-full"
                 onError={() => setImgError(true)}
               />
             ) : (
@@ -129,7 +129,7 @@ const TeamCard = ({ name, role, bio, photo, accent, social, index = 0 }: Props) 
                 <LinkedInIcon />
               </a>
             )}
-            {social.github && (
+            {/* {social.github && (
               <a
                 href={social.github}
                 target="_blank"
@@ -154,7 +154,7 @@ const TeamCard = ({ name, role, bio, photo, accent, social, index = 0 }: Props) 
               >
                 <XIcon />
               </a>
-            )}
+            )} */}
           </div>
         )}
       </div>

@@ -22,7 +22,7 @@ export default function TextCycleAnimation({
   }, []);
 
   return (
-    <div className={className}>
+    <div>
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
@@ -33,7 +33,7 @@ export default function TextCycleAnimation({
             duration: 0.55,
             ease: [0.25, 0.1, 0.25, 1],
           }}
-          className="block"
+          className={`block ${className}`}
         >
           {words[index]}
         </motion.span>

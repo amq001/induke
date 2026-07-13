@@ -4,10 +4,11 @@ import { industriesData } from "@/constants/data";
 
 const IndustriesSection = () => {
   return (
-    <section className="w-full bg-gray-50 py-20 md:py-32">
+    <section id="industries" className="w-full scroll-mt-24 bg-gray-50 py-20 md:py-32">
       <div className="flex flex-col gap-16 items-center">
         <HeadingComponent
           heading="Industries We Work In"
+          italicWord="Work"
           description="Domain expertise across the sectors that need software built right."
           variant="primary"
           textCentered={true}

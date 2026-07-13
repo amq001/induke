@@ -4,7 +4,7 @@ import { teamData } from "@/constants/data";
 
 const TeamSection = () => {
   return (
-    <section className="relative w-full bg-black py-20 md:py-32 overflow-hidden">
+    <section id="team" className="relative w-full scroll-mt-24 bg-black py-20 md:py-32 overflow-hidden">
       {/* multi-colour ambient glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 left-1/4 w-72 h-72 rounded-full bg-[#F37036] opacity-20 blur-[120px]" />
@@ -15,6 +15,7 @@ const TeamSection = () => {
       <div className="relative flex flex-col gap-16 items-center">
         <HeadingComponent
           heading="Meet the Team"
+          italicWord="Team"
           description="The people building, designing, and shipping every product we touch."
           variant="secondary"
           textCentered={true}

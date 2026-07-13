@@ -67,7 +67,7 @@ const Footer = () => {
                   We design and build software products for teams who need to
                   move fast without breaking things.
                 </p>
-                {socialSection && (
+                {/* {socialSection && (
                   <div className="flex items-center gap-3 pt-2">
                     {socialSection.links.map((link) => (
                       <Link
@@ -82,7 +82,7 @@ const Footer = () => {
                       </Link>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
 
               <div className="grid w-full max-w-2xl grid-cols-2 gap-8 sm:grid-cols-3 md:w-auto">

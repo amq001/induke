@@ -11,47 +11,52 @@ type Props = {
 };
 
 const icons: Record<string, React.ReactNode> = {
-  "Web Development": (
+  "Full-Stack Web Development": (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="m8 9-4 3 4 3m8-6 4 3-4 3M13 6l-2 12"
     />
   ),
-  "Mobile Apps": (
+  "Full-Stack App Development": (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M7 3.5A1.5 1.5 0 0 1 8.5 2h7A1.5 1.5 0 0 1 17 3.5v17A1.5 1.5 0 0 1 15.5 22h-7A1.5 1.5 0 0 1 7 20.5v-17ZM11 19h2"
     />
   ),
-  "Product Strategy": (
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 22c5.5-2 8-6 8-11V5l-8-3-8 3v6c0 5 2.5 9 8 11Zm2.5-13.5-3 5-2-2"
-    />
-  ),
-  "UI/UX Design": (
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 19.5 3 15V8l9-4.5L21 8v7l-9 4.5Zm0 0V11M3 8l9 4.5 9-4.5"
-    />
-  ),
-  "AI Integration": (
+  "AI SaaS Product Development": (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
       d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1M9 9h6v6H9V9Z"
     />
   ),
-  "DevOps & Cloud": (
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17.2 8.05 4.5 4.5 0 0 1 17 17H7Zm3-1v3m4-3v3"
-    />
+  "AI Agents Development": (
+    <>
+      <rect x="4" y="9" width="16" height="10" rx="2" />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 9V5m-3-2h6M9 14h.01M15 14h.01M2 13h2m16 0h2"
+      />
+    </>
+  ),
+  "Motion Graphics": (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10 8.5v7l6-3.5-6-3.5Z" />
+    </>
+  ),
+  "2D & 3D Animations": (
+    <>
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+      />
+      <path strokeLinecap="round" strokeLinejoin="round" d="m3.3 7 8.7 5 8.7-5M12 22V12" />
+    </>
   ),
 };
 

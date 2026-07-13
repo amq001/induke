@@ -19,6 +19,7 @@ export default function Home() {
     <div>
       <HeroSection
         heading="Turning bold ideas into"
+        italicWord="bold"
         description="From first sketch to production deploy, we partner with ambitious teams to ship software that performs, scales, and lasts."
         textCycle={[
           "Production-Ready Software",

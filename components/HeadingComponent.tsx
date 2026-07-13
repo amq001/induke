@@ -1,3 +1,4 @@
+import { renderAccentWord } from "@/lib/text";
 import Reveal from "./Reveal";
 
 type Props = {
@@ -7,6 +8,7 @@ type Props = {
   description?: string;
   textCentered?: boolean;
   variant?: "primary" | "secondary" | "gradient";
+  italicWord?: string;
 };
 
 const HeadingComponent = ({
@@ -16,6 +18,7 @@ const HeadingComponent = ({
   description,
   textCentered = false,
   variant = "primary",
+  italicWord,
 }: Props) => {
   return (
     <div
@@ -28,9 +31,13 @@ const HeadingComponent = ({
         <Reveal>
           <h1
             data-variant={variant}
-            className={`text-2xl md:text-5xl leading-10 md:leading-relaxed font-medium text-center data-[variant=primary]:text-black data-[variant=secondary]:text-white data-[variant=gradient]:text-transparent data-[variant=gradient]:bg-clip-text data-[variant=gradient]:bg-[linear-gradient(200deg,#000_20%,#F37036_100%)] ${headingClassName}`}
+            className={`text-2xl md:text-5xl leading-tight md:leading-[1.15] font-semibold text-center bg-clip-text text-transparent data-[variant=primary]:bg-gradient-to-b data-[variant=primary]:from-gray-900 data-[variant=primary]:via-gray-900 data-[variant=primary]:to-gray-500 data-[variant=secondary]:bg-gradient-to-b data-[variant=secondary]:from-white data-[variant=secondary]:via-white data-[variant=secondary]:to-gray-400 data-[variant=gradient]:bg-[linear-gradient(200deg,#000_20%,#F37036_100%)] ${headingClassName}`}
           >
-            {heading}
+            {renderAccentWord(
+              heading,
+              italicWord,
+              variant === "secondary" ? "text-gray-400" : "text-gray-500"
+            )}
           </h1>
         </Reveal>
       )}

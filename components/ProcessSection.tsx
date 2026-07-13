@@ -49,6 +49,7 @@ const ProcessSection = () => {
           <SectionEyebrow label="Our Process" accent="#10B981" dark={false} />
           <HeadingComponent
             heading="A process built for momentum"
+            italicWord="momentum"
             description="Six stages, always visible to you, so you always know what's next."
             variant="primary"
             textCentered={true}
@@ -93,7 +94,7 @@ const ProcessSection = () => {
                 <h3 className="font-semibold text-gray-900 md:text-lg">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-500 md:max-w-[160px]">
+                <p className="text-sm text-gray-500 md:max-w-40">
                   {item.description}
                 </p>
               </div>

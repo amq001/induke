@@ -3,10 +3,11 @@ export const footerData = [
   {
     title: "Company",
     links: [
-      { heading: "", title: "Home", src: "/" },
-      { heading: "", title: "Portfolio", src: "/portfolio", target: "" },
-      { heading: "", title: "Services", src: "/services", target: "" },
-      { heading: "", title: "Industries", src: "/industries", target: "" },
+      { heading: "", title: "Home", src: "#" },
+      { heading: "", title: "Services", src: "#services", target: "" },
+      { heading: "", title: "Industries", src: "#industries", target: "" },
+      { heading: "", title: "Portfolio", src: "#work", target: "" },
+      { heading: "", title: "Contact", src: "#contact", target: "" },
     ],
   },
   {
@@ -14,11 +15,11 @@ export const footerData = [
     links: [
       {
         heading: "For Projects",
-        title: "solutions@divdash.com",
+        title: "solutions@induke.com",
         // src: "/",
         // target: "",
       },
-      { heading: "For Jobs", title: "apply@divdash.com" },
+      { heading: "For Jobs", title: "apply@induke.com" },
     ],
   },
   {
@@ -27,25 +28,25 @@ export const footerData = [
       {
         heading: "",
         title: "Linkedin",
-        src: "https://www.linkedin.com/company/divdash",
+        src: "https://www.linkedin.com",
         target: "blank",
       },
       {
         heading: "",
         title: "Facebook",
-        src: "https://www.facebook.com/DivDashOfficial",
+        src: "https://www.facebook.com",
         target: "blank",
       },
       {
         heading: "",
         title: "Instagram",
-        src: "https://www.instagram.com/DivDashOfficial/#",
+        src: "https://www.instagram.com",
         target: "blank",
       },
       {
         heading: "",
         title: "X",
-        src: "https://x.com/DivDashOfficial",
+        src: "https://x.com",
         target: "blank",
       },
     ],
@@ -57,10 +58,10 @@ export const teamData = [
     name: "Aqib Mehtab",
     role: "Co-Founder",
     bio: "Sets the vision and steers the ship, turning ambitious ideas into shipped products.",
-    photo: "/team/aqib-mehtab.jpg",
+    photo: "/aqib.jpg",
     accent: "#F37036",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/aqibmehtab/",
       github: "#",
       x: "#",
     },
@@ -69,10 +70,10 @@ export const teamData = [
     name: "Samar Ali",
     role: "Co-Founder",
     bio: "Blends strategy and design to make sure every product feels as good as it works.",
-    photo: "/team/samar-ali.jpg",
+    photo: "/samar.jpeg",
     accent: "#007DC5",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/imsamarali/",
       github: "#",
       x: "#",
     },
@@ -81,10 +82,10 @@ export const teamData = [
     name: "Muhammad Sohaib Khan",
     role: "Co-Founder",
     bio: "Turns complex problems into clean, scalable code that just works in production.",
-    photo: "/team/sohaib-khan.jpg",
+    photo: "/sohaib.jpeg",
     accent: "#8B5CF6",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/sohaibkhan100/",
       github: "#",
       x: "#",
     },
@@ -159,67 +160,145 @@ export const audienceData = [
 
 export const servicesData = [
   {
-    title: "Web Development",
-    description: "Fast, accessible, production-grade web apps built on modern frameworks.",
-    features: ["Next.js & React", "API integrations", "Performance tuning"],
+    title: "Full-Stack Web Development",
+    description: "End-to-end web apps — database to UI — built fast and built to scale.",
+    features: ["Next.js & React", "API & database design", "Performance tuning"],
     accent: "#F37036",
   },
   {
-    title: "Mobile Apps",
-    description: "Native-feel apps for iOS and Android from a single codebase.",
-    features: ["Cross-platform", "Offline support", "App store launch"],
+    title: "Full-Stack App Development",
+    description: "Cross-platform mobile apps with a native feel, shipped from one codebase.",
+    features: ["iOS & Android", "Backend integration", "App store launch"],
     accent: "#007DC5",
   },
   {
-    title: "Product Strategy",
-    description: "Scope the right MVP and roadmap before a line of code is written.",
-    features: ["Discovery workshops", "Roadmapping", "Technical audits"],
+    title: "AI SaaS Product Development",
+    description: "AI-native SaaS products designed, built, and shipped from scratch.",
+    features: ["LLM-powered features", "Subscription billing", "Scalable infrastructure"],
     accent: "#8B5CF6",
   },
   {
-    title: "UI/UX Design",
-    description: "Interfaces that look premium and guide users to the next step.",
-    features: ["Wireframes to hi-fi", "Design systems", "Usability testing"],
+    title: "AI Agents Development",
+    description: "Autonomous agents that handle real workflows, not just chat.",
+    features: ["Tool-calling agents", "RAG pipelines", "Workflow automation"],
     accent: "#10B981",
   },
   {
-    title: "AI Integration",
-    description: "Practical AI features that solve real problems, not gimmicks.",
-    features: ["LLM workflows", "RAG pipelines", "Automation"],
+    title: "Motion Graphics",
+    description: "Animated visuals that make your brand and product feel alive.",
+    features: ["Brand animations", "Explainer videos", "UI motion design"],
     accent: "#F59E0B",
   },
   {
-    title: "DevOps & Cloud",
-    description: "Infrastructure that scales quietly and doesn't page you at 3am.",
-    features: ["CI/CD pipelines", "Cloud architecture", "Monitoring"],
+    title: "2D & 3D Animations",
+    description: "Character and product animation for marketing, apps, and games.",
+    features: ["2D character animation", "3D modeling & rendering", "Render-ready assets"],
     accent: "#EC4899",
   },
 ];
 
+export const portfolioCategories = [
+  "Marketplace",
+  "Travel",
+  "Streaming",
+  "Education",
+  "Health & Fitness",
+  "Healthcare",
+  "AI",
+];
+
 export const portfolioData = [
   {
-    title: "Northline Commerce",
-    description: "A headless storefront rebuild that cut checkout time in half.",
-    tech: ["Next.js", "Stripe", "PostgreSQL"],
-    image: "/portfolio/project-1.jpg",
+    title: "Hotelnut",
+    category: "Marketplace",
+    tags: ["Marketplace", "Booking", "Responsive"],
+    description:
+      "A full-stack accommodation booking platform similar to Airbnb, with property listings, booking workflows, and a scalable architecture.",
+    tech: ["Next.js", "React", "Node.js"],
+    image: "/portfolio/hotelnut.jpg",
     accent: "#F37036",
-    url: "#",
+    url: "https://hotelnut.vercel.app",
   },
   {
-    title: "Ledgerly",
-    description: "A compliance-first ledger dashboard for a fintech scale-up.",
-    tech: ["React", "Node.js", "AWS"],
-    image: "/portfolio/project-2.jpg",
+    title: "Muqamat",
+    category: "Travel",
+    tags: ["Travel", "Booking", "UI/UX"],
+    description:
+      "A modern flight booking platform with a responsive UI, seamless booking experience, and scalable frontend architecture.",
+    tech: ["Next.js", "React", "Tailwind CSS"],
+    image: "/portfolio/muqamat.jpg",
     accent: "#007DC5",
-    url: "#",
   },
   {
-    title: "Fleetwise",
-    description: "Real-time fleet tracking with route optimization at scale.",
-    tech: ["TypeScript", "Mapbox", "Redis"],
-    image: "/portfolio/project-3.jpg",
+    title: "Ability Stream",
+    category: "Streaming",
+    tags: ["Streaming", "Media", "Auth"],
+    description:
+      "A full-stack streaming platform with a modern UI, secure backend architecture, and scalable performance for media delivery.",
+    tech: ["Next.js", "Node.js", "Tailwind CSS"],
+    image: "/portfolio/ability-stream.jpg",
     accent: "#8B5CF6",
-    url: "#",
+    url: "https://ability-stream-theta.vercel.app",
+  },
+  {
+    title: "Islamia TV",
+    category: "Streaming",
+    tags: ["Streaming", "Education", "Firebase"],
+    description:
+      "A video streaming app delivering educational content, with personalized learning progress synced across devices and push notifications.",
+    tech: ["Flutter", "Firebase", "REST API"],
+    image: "/portfolio/islamia-tv.jpg",
+    accent: "#10B981",
+  },
+  {
+    title: "AH7 Fit",
+    category: "Health & Fitness",
+    tags: ["Fitness", "Wellness", "Mobile"],
+    description:
+      "A health and fitness app featuring workout plans, healthy recipes, fitness articles, and wellness tracking with a smooth, responsive UI.",
+    tech: ["Flutter", "REST API", "Local Storage"],
+    image: "/portfolio/ah7-fit.jpg",
+    accent: "#F59E0B",
+  },
+  {
+    title: "Doctor Simple",
+    category: "Healthcare",
+    tags: ["Healthcare", "Appointments", "Mobile"],
+    description:
+      "A healthcare app that lets users book appointments, request prescriptions, and manage healthcare services with secure API integration.",
+    tech: ["Flutter", "REST API", "Push Notifications"],
+    image: "/portfolio/doctor-simple.jpg",
+    accent: "#EC4899",
+  },
+  {
+    title: "Euphoni",
+    category: "AI",
+    tags: ["AI", "Meditation", "Wellness"],
+    description:
+      "An AI-powered meditation app offering personalized sessions, voice recording, audio playback, and customizable session lengths.",
+    tech: ["Flutter", "AI Integration", "REST API"],
+    image: "/portfolio/euphoni.jpg",
+    accent: "#8B5CF6",
+  },
+  {
+    title: "Thomas Keith Independent School",
+    category: "Education",
+    tags: ["Education", "School Management", "Analytics"],
+    description:
+      "A school management app enabling parents to track attendance, grades, assignments, timetables, and student progress with real-time notifications.",
+    tech: ["Flutter", "Intercom", "Push Notifications"],
+    image: "/portfolio/thomas-keith-school.jpg",
+    accent: "#007DC5",
+  },
+  {
+    title: "Lady Evelyn Independent School",
+    category: "Education",
+    tags: ["Education", "School Management", "Dashboard"],
+    description:
+      "A school management app giving parents real-time access to attendance reports, grades, assignments, timetables, and student performance.",
+    tech: ["Flutter", "Intercom", "Push Notifications"],
+    image: "/portfolio/lady-evelyn-school.jpg",
+    accent: "#F37036",
   },
 ];
 
@@ -309,30 +388,30 @@ export const whyChooseUsData = [
 export const testimonialsData = [
   {
     name: "Sarah Whitfield",
-    role: "CEO",
-    company: "Northline Commerce",
+    role: "Founder & CEO",
+    company: "Hotelnut",
     review:
-      "They rebuilt our checkout in six weeks and conversion jumped almost immediately. Communication was clear the entire way through.",
+      "They took Hotelnut from a rough idea to a fully working booking platform in weeks. The architecture is clean and it hasn't needed a single emergency fix since launch.",
     rating: 5,
     accent: "#F37036",
   },
   {
     name: "Daniel Reyes",
-    role: "Founder",
-    company: "Ledgerly",
+    role: "Founder & CEO",
+    company: "Ability Stream",
     review:
-      "Rare to find a team that understands both the engineering and the business side. They pushed back on scope when it made sense.",
+      "Ability Stream needed to handle real users from day one, and it did. Secure, fast, and the backend has held up under real traffic without issues.",
     rating: 5,
-    accent: "#007DC5",
+    accent: "#8B5CF6",
   },
   {
     name: "Priya Nair",
-    role: "Head of Product",
-    company: "Fleetwise",
+    role: "Founder & CEO",
+    company: "Muqamat",
     review:
-      "Our roadmap moved faster with them as an extension of our team than it did with our previous in-house setup.",
+      "Muqamat's booking flow feels effortless now. They rebuilt the entire frontend and somehow made a complicated flight search feel simple.",
     rating: 5,
-    accent: "#8B5CF6",
+    accent: "#007DC5",
   },
 ];
 

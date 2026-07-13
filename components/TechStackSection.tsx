@@ -13,6 +13,7 @@ const TechStackSection = () => {
           <SectionEyebrow label="Tech Stack" accent="#F59E0B" dark={false} />
           <HeadingComponent
             heading="Tools we trust in production"
+            italicWord="trust"
             description="A modern, battle-tested stack chosen for reliability, not resume-padding."
             variant="primary"
             textCentered={true}

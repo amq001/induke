@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./Button";
 import HeadingComponent from "./HeadingComponent";
 import Reveal from "./Reveal";
@@ -6,7 +7,7 @@ import Reveal from "./Reveal";
 
 const ContactUsSection = () => {
   return (
-    <div className="bg-black">
+    <div id="contact" className="scroll-mt-24 bg-black">
       <section className="relative min-h-screen w-full flex flex-col gap-12 items-center bg-black justify-center rounded-b-[50px] overflow-hidden">
         {/* background layer */}
         <div className="absolute inset-0 z-0">
@@ -55,8 +56,15 @@ const ContactUsSection = () => {
                 // description="Let's Collaborate to Bring Your Vision to Life"
                 variant="secondary"
                 textCentered={true}
+                italicWord="paying"
               />
+              <Link
+                href="https://cal.com/aqib-mehtab-g6vkca/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button variant="bordered">Book a Call</Button>
+              </Link>
             </div>
           </div>
         </div>

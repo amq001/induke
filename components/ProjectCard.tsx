@@ -9,6 +9,7 @@ import Button from "./Button";
 type Props = {
   title: string;
   description: string;
+  tags: string[];
   tech: string[];
   image: string;
   accent: string;
@@ -19,6 +20,7 @@ type Props = {
 const ProjectCard = ({
   title,
   description,
+  tags,
   tech,
   image,
   accent,
@@ -29,10 +31,11 @@ const ProjectCard = ({
 
   return (
     <motion.div
+      layout
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.5, delay: index * 0.12, ease: "easeOut" }}
+      transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
       className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-white/20"
     >
       <div
@@ -78,7 +81,19 @@ const ProjectCard = ({
         <div className="absolute inset-0 bg-linear-to-t from-[#0b0b0d] via-transparent to-transparent" />
       </div>
 
-      <div className="flex flex-col gap-4 p-6 md:p-8">
+      <div className="flex flex-col gap-3 p-6 md:p-8">
+        <div
+          className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wide"
+          style={{ color: accent }}
+        >
+          {tags.map((tag, i) => (
+            <span key={tag} className="flex items-center gap-2">
+              {i > 0 && <span className="text-white/20">&middot;</span>}
+              {tag}
+            </span>
+          ))}
+        </div>
+
         <h3 className="text-lg md:text-xl font-semibold text-white">
           {title}
         </h3>
@@ -86,19 +101,17 @@ const ProjectCard = ({
           {description}
         </p>
 
-        <div className="flex flex-wrap gap-2">
-          {tech.map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-300"
-            >
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-white/10 pt-4 text-xs uppercase tracking-wide text-gray-500">
+          {tech.map((item, i) => (
+            <span key={item} className="flex items-center gap-2">
+              {i > 0 && <span className="text-white/10">&middot;</span>}
               {item}
             </span>
           ))}
         </div>
 
         {url && (
-          <div className="mt-2">
+          <div className="pt-2">
             <Link href={url} target="_blank" rel="noopener noreferrer">
               <Button variant="bordered">View Project</Button>
             </Link>

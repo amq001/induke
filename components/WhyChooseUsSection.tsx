@@ -11,6 +11,7 @@ const WhyChooseUsSection = () => {
           <SectionEyebrow label="Why Choose Us" accent="#EC4899" dark={false} />
           <HeadingComponent
             heading="What working with us actually looks like"
+            italicWord="actually"
             description="No smoke and mirrors — just the fundamentals done consistently well."
             variant="primary"
             textCentered={true}

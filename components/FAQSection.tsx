@@ -11,6 +11,7 @@ const FAQSection = () => {
           <SectionEyebrow label="FAQ" accent="#007DC5" dark={false} />
           <HeadingComponent
             heading="Questions you're probably asking"
+            italicWord="probably"
             description="Can't find what you're looking for? Book a call and ask us directly."
             variant="primary"
             textCentered={true}

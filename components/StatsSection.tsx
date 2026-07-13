@@ -19,6 +19,7 @@ const StatsSection = () => {
           <SectionEyebrow label="Results" accent="#10B981" dark={true} />
           <HeadingComponent
             heading="Numbers that back it up"
+            italicWord="back"
             variant="secondary"
             textCentered={true}
           />
