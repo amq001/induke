@@ -1,8 +1,19 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BiMenu, BiX } from "react-icons/bi";
 import Button from "./Button";
+
+const MenuIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2} className="h-7.5 w-7.5">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+);
+
+const CloseIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2} className="h-7.5 w-7.5">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
+  </svg>
+);
 
 const navLinks = [
   // { href: "#", label: "Home" },
@@ -113,17 +124,7 @@ const Navbar = () => {
               className="flex items-center justify-center p-2 rounded-md border-none hover:text-gray-900 hover:bg-white hover:transition-all hover:duration-300 hover:ease-in-out"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? (
-                <BiMenu
-                  size={30}
-                  color="#fff"
-                />
-              ) : (
-                <BiX
-                  size={30}
-                  color="#fff"
-                />
-              )}
+              {isMobileMenuOpen ? <MenuIcon /> : <CloseIcon />}
             </button>
           </div>
         </div>
